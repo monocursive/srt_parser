@@ -10,7 +10,8 @@ defmodule SrtParser.MixProject do
       source_url: "https://github.com/monocursive/srt_parser",
       description: "Elixir package to parse SRT (subtitles) files",
       package: package(),
-      deps: deps()
+      deps: deps(),
+      docs: docs()
     ]
   end
 
@@ -33,6 +34,19 @@ defmodule SrtParser.MixProject do
         "Monocurive Homepage" => "https://monocursive.com"
       },
       files: ["lib", "mix.exs", "README*", "LICENSE*", ".formatter.exs"]
+    ]
+  end
+
+  defp docs do
+    [
+      extras: [
+        LICENSE: [title: "License"],
+        "README.md": [title: "Overview"]
+      ],
+      main: "readme",
+      source_url: "https://github.com/monocursive/srt_parser",
+      source_ref: "0.1.0",
+      formatters: ["html"]
     ]
   end
 end
