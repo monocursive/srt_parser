@@ -49,7 +49,8 @@ end
   iex> File.read!("example.srt") |> SrtParser.parse()
   ```
 
-  ## Contributing
+## Contributing
+
   Feel free to send a pull request if you have any improvements to the library.
 
   If you are considering to add a new feature, please create an issue first to discuss if the feature is a good fit for the project.
