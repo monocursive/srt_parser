@@ -31,7 +31,7 @@ defmodule SrtParser do
   end
 
   @doc """
-  Parse the given srt string into a tuple containing :ok and a list of `ParsedSubtitle` structs or a tuple with error and the error message. Start and end times are converted to milliseconds.
+  Get an SRT string from a list of `ParsedSubtitle` structs.
 
   ## Example
     iex> SrtParser.to_srt!([%SrtParser.ParsedSubtitle{id: 1, start_time: 0, end_time: 2123, time_string: "00:00:00,000 --> 00:00:02,123", text: "Hello world"}])
