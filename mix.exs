@@ -8,7 +8,7 @@ defmodule SrtParser.MixProject do
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
       source_url: "https://github.com/monocursive/srt_parser",
-      description: "Elixir library to parse SRT (subtitles) files",
+      description: "Elixir package to parse SRT (subtitles) files",
       package: package(),
       deps: deps()
     ]
