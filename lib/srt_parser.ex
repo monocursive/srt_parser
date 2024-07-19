@@ -23,6 +23,7 @@ defmodule SrtParser do
     try do
       {:ok,
        srt
+       |> String.trim()
        |> String.split("\n\n", trim: true)
        |> Enum.map(&parse_subtitle!/1)}
     rescue
